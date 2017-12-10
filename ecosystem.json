@@ -1,0 +1,20 @@
+{
+    "apps" : [{
+        "name"        : "Web Server",
+        "script"      : "server.js",
+        "env": {
+            "NODE_ENV": "production"
+        }
+    }],
+	"deploy" : {
+		"production" : {
+			"user" : "pi",
+			"host" : "lellex.hopto.org",
+			"port" : "5000",
+			"ref"  : "origin/master",
+			"repo" : "git@github.com:lellex/raspberry-pi-web-server.git",
+			"path" : "/var/www/web-server",
+			"post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production"
+		}
+	}
+}
