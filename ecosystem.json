@@ -1,7 +1,7 @@
 {
     "apps" : [{
-        "name"        : "Web Server",
-        "script"      : "server.js",
+        "name"        : "Livestream",
+        "script"      : "index.js",
         "env": {
             "NODE_ENV": "production"
         }
@@ -12,8 +12,8 @@
 			"host" : "lellex.hopto.org",
 			"port" : "22",
 			"ref"  : "origin/master",
-			"repo" : "git@github.com:lellex/raspberry-pi-web-server.git",
-			"path" : "/var/www/web-server",
+			"repo" : "git@github.com:lellex/livestream",
+			"path" : "/var/www/livestream",
 			"post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production"
 		}
 	}
