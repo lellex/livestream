@@ -10,7 +10,7 @@
 		"production" : {
 			"user" : "pi",
 			"host" : "lellex.hopto.org",
-			"port" : "5000",
+			"port" : "22",
 			"ref"  : "origin/master",
 			"repo" : "git@github.com:lellex/raspberry-pi-web-server.git",
 			"path" : "/var/www/web-server",
