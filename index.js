@@ -8,6 +8,7 @@ var path = require('path');
 var spawn = require('child_process').spawn;
 var proc;
  
+app.set('port', (process.env.PORT || 5000));
 app.use('/', express.static(path.join(__dirname, 'stream')));
  
  
